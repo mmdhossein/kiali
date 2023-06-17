@@ -1,0 +1,28 @@
+= Multicluster Hack Scripts
+
+These hack scripts can be used to install the following link:https://istio.io/latest/docs/setup/install/multicluster/[multicluster configurations]:
+
+* Multi-Primary 
+* Primary-Remote
+
+It utilizes the hack scripts located in link:..[the hack/istio directory].
+
+These should work on either OpenShift or Kubernetes environments. If you have both `kubectl` and `oc` in your PATH, you can specify which one to use (and hence which environment you want to use) via the `-c` option to the scripts.
+
+Note: This scripts are tested on Kubernetes clusters using Minikube.
+
+== Multi-Primary
+
+Use the link:./install-multi-primary.sh[install-multi-primary.sh script]. See `--help` for options.
+
+=== Uninstall
+
+You can uninstall everything from both clusters using the link:./uninstall-multi-primary.sh[uninstall-multi-primary.sh script].
+
+== Primary-Remote
+
+Use the link:./install-primary-remote.sh[install-primary-remote.sh script]. See `--help` for options.
+
+=== Uninstall
+
+You can uninstall everything from both clusters using the link:./uninstall-primary-remote.sh[uninstall-primary-remote.sh script].

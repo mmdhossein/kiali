@@ -1,0 +1,507 @@
+{
+  "timestamp": 1523364075,
+  "duration": 600,
+  "graphType": "versionedApp",
+  "elements": {
+    "nodes": [
+      {
+        "data": {
+          "id": "472bfb370dd24116b28b534e453ef044",
+          "nodeType": "box",
+          "cluster": "unknown",
+          "namespace": "bookinfo",
+          "app": "reviews",
+          "healthData": null,
+          "isBox": "app"
+        }
+      },
+      {
+        "data": {
+          "id": "f569f02ca0fd194ed28a6e5e0d95a98d",
+          "nodeType": "app",
+          "cluster": "unknown",
+          "namespace": "bookinfo",
+          "workload": "details-v1",
+          "app": "details",
+          "version": "v1",
+          "destServices": [
+            {
+              "cluster": "unknown",
+              "namespace": "bookinfo",
+              "name": "details"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpIn": "80.00",
+                "httpIn3xx": "20.00",
+                "httpIn4xx": "20.00",
+                "httpIn5xx": "20.00"
+              }
+            }
+          ],
+          "healthData": null
+        }
+      },
+      {
+        "data": {
+          "id": "354af352ce8b5c4103bc86828039622d",
+          "nodeType": "app",
+          "cluster": "unknown",
+          "namespace": "bookinfo",
+          "workload": "productpage-v1",
+          "app": "productpage",
+          "version": "v1",
+          "destServices": [
+            {
+              "cluster": "unknown",
+              "namespace": "bookinfo",
+              "name": "productpage"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpIn": "170.00",
+                "httpOut": "164.00"
+              }
+            },
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpOut": "31.00"
+              }
+            }
+          ],
+          "healthData": null
+        }
+      },
+      {
+        "data": {
+          "id": "ab3aaaac969f359da3dd1f50364f1952",
+          "parent": "472bfb370dd24116b28b534e453ef044",
+          "nodeType": "app",
+          "cluster": "unknown",
+          "namespace": "bookinfo",
+          "workload": "reviews-v1",
+          "app": "reviews",
+          "version": "v1",
+          "destServices": [
+            {
+              "cluster": "unknown",
+              "namespace": "bookinfo",
+              "name": "reviews"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpIn": "20.00"
+              }
+            }
+          ],
+          "healthData": null
+        }
+      },
+      {
+        "data": {
+          "id": "dfeed878f470746a60e51dfbea7db762",
+          "parent": "472bfb370dd24116b28b534e453ef044",
+          "nodeType": "app",
+          "cluster": "unknown",
+          "namespace": "bookinfo",
+          "workload": "reviews-v2",
+          "app": "reviews",
+          "version": "v2",
+          "destServices": [
+            {
+              "cluster": "unknown",
+              "namespace": "bookinfo",
+              "name": "reviews"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpIn": "20.00"
+              }
+            }
+          ],
+          "healthData": null
+        }
+      },
+      {
+        "data": {
+          "id": "984add433545d4b5012c54cc76a17596",
+          "parent": "472bfb370dd24116b28b534e453ef044",
+          "nodeType": "app",
+          "cluster": "unknown",
+          "namespace": "bookinfo",
+          "workload": "reviews-v3",
+          "app": "reviews",
+          "version": "v3",
+          "destServices": [
+            {
+              "cluster": "unknown",
+              "namespace": "bookinfo",
+              "name": "reviews"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpIn": "20.00"
+              }
+            }
+          ],
+          "healthData": null
+        }
+      },
+      {
+        "data": {
+          "id": "6029f784361ec8773f59e1855b882961",
+          "nodeType": "app",
+          "cluster": "unknown",
+          "namespace": "bookinfo",
+          "workload": "tcp-v1",
+          "app": "tcp",
+          "version": "v1",
+          "destServices": [
+            {
+              "cluster": "unknown",
+              "namespace": "bookinfo",
+              "name": "tcp"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpIn": "31.00"
+              }
+            }
+          ],
+          "healthData": null
+        }
+      },
+      {
+        "data": {
+          "id": "0803054a9187a09d121dd2dedf79cece",
+          "nodeType": "app",
+          "cluster": "unknown",
+          "namespace": "istio-system",
+          "workload": "ingressgateway-unknown",
+          "app": "ingressgateway",
+          "version": "latest",
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpOut": "100.00"
+              }
+            }
+          ],
+          "healthData": null,
+          "isInaccessible": true,
+          "isOutside": true,
+          "isRoot": true
+        }
+      },
+      {
+        "data": {
+          "id": "c806ddbb86ea4bb8a9c7c8b6be3ce196",
+          "nodeType": "service",
+          "cluster": "unknown",
+          "namespace": "unknown",
+          "service": "unknown",
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpIn": "4.00",
+                "httpIn4xx": "4.00"
+              }
+            }
+          ],
+          "healthData": null,
+          "isInaccessible": true
+        }
+      },
+      {
+        "data": {
+          "id": "375ab940b56ae7bcf0f89cb1a7af5d44",
+          "nodeType": "unknown",
+          "cluster": "unknown",
+          "namespace": "unknown",
+          "workload": "unknown",
+          "app": "unknown",
+          "version": "unknown",
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpOut": "50.00"
+              }
+            }
+          ],
+          "healthData": null,
+          "isInaccessible": true,
+          "isRoot": true
+        }
+      }
+    ],
+    "edges": [
+      {
+        "data": {
+          "id": "ea191cd201cd7633178d64426791bdab",
+          "source": "0803054a9187a09d121dd2dedf79cece",
+          "target": "354af352ce8b5c4103bc86828039622d",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "100.00",
+              "httpPercentReq": "100.0"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "productpage:9080": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "229560b36e0b51f3e949b72d856986d1",
+          "source": "354af352ce8b5c4103bc86828039622d",
+          "target": "354af352ce8b5c4103bc86828039622d",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "20.00",
+              "httpPercentReq": "12.2"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "productpage:9080": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "f4361c196dcc8c598700ed93b0a2c4b7",
+          "source": "354af352ce8b5c4103bc86828039622d",
+          "target": "6029f784361ec8773f59e1855b882961",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "31.00"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "tcp:9080": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "ef3072f36ed0ab9f4b316069f0e5043b",
+          "source": "354af352ce8b5c4103bc86828039622d",
+          "target": "984add433545d4b5012c54cc76a17596",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "20.00",
+              "httpPercentReq": "12.2"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "reviews:9080": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "1ea11ebe21ce86ff79e16e857e95fef8",
+          "source": "354af352ce8b5c4103bc86828039622d",
+          "target": "ab3aaaac969f359da3dd1f50364f1952",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "20.00",
+              "httpPercentReq": "12.2"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "reviews:9080": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "5de3289cb647f6fd6785ebb95300f1a3",
+          "source": "354af352ce8b5c4103bc86828039622d",
+          "target": "c806ddbb86ea4bb8a9c7c8b6be3ce196",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "4.00",
+              "http4xx": "4.00",
+              "httpPercentErr": "100.0",
+              "httpPercentReq": "2.4"
+            },
+            "responses": {
+              "404": {
+                "flags": {
+                  "NR": "100.0"
+                },
+                "hosts": {
+                  "unknown": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "91ea66fa4cb431f019cb9092010b69f6",
+          "source": "354af352ce8b5c4103bc86828039622d",
+          "target": "dfeed878f470746a60e51dfbea7db762",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "20.00",
+              "httpPercentReq": "12.2"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "reviews:9080": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "2c57e04336ed3ccb6f5ca898932cc1a0",
+          "source": "354af352ce8b5c4103bc86828039622d",
+          "target": "f569f02ca0fd194ed28a6e5e0d95a98d",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "80.00",
+              "http3xx": "20.00",
+              "http4xx": "20.00",
+              "http5xx": "20.00",
+              "httpPercentErr": "50.0",
+              "httpPercentReq": "48.8"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "25.0"
+                },
+                "hosts": {
+                  "details:9080": "25.0"
+                }
+              },
+              "300": {
+                "flags": {
+                  "-": "25.0"
+                },
+                "hosts": {
+                  "details:9080": "25.0"
+                }
+              },
+              "400": {
+                "flags": {
+                  "-": "25.0"
+                },
+                "hosts": {
+                  "details:9080": "25.0"
+                }
+              },
+              "500": {
+                "flags": {
+                  "-": "25.0"
+                },
+                "hosts": {
+                  "details:9080": "25.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "fa70dcf5a35f2316ebcf120980a07b82",
+          "source": "375ab940b56ae7bcf0f89cb1a7af5d44",
+          "target": "354af352ce8b5c4103bc86828039622d",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "50.00",
+              "httpPercentReq": "100.0"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "productpage:9080": "100.0"
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}
